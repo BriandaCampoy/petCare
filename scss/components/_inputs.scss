@@ -1,0 +1,15 @@
+@use '../abstracts';
+
+.input {
+  border-radius: 2.5rem;
+  border: 1.4px solid abstracts.$secondary-color;
+  padding:1rem;
+  width: 21.5625rem;
+  height: 3.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.none-input{
+  border-style: none;
+}

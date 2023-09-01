@@ -1,0 +1,19 @@
+@use '../base';
+
+.logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  gap: 0.5rem;
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  h3 {
+    @include base.logo-text
+    // color: abstracts.$primary-color;
+    // font-size: 1.25rem;
+    // font-weight: 600;
+  }
+}

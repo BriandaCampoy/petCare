@@ -1,0 +1,11 @@
+@use '../abstracts';
+
+$font-stack: 'Poppins', sans-serif;
+
+$medium-text: 1.5rem; 
+
+@mixin logo-text{
+  color: abstracts.$primary-color;
+  font-size: 1.25rem;
+  font-weight: 600;
+}

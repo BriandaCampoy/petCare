@@ -1,0 +1,58 @@
+@use '../abstracts';
+
+.login {
+  @include abstracts.flex(column, flex-start, center);
+}
+
+.login_form {
+  @include abstracts.flex(column, center, center);
+  gap: 1rem;
+  margin: 2.5rem 0;
+  h3 {
+    @include abstracts.medium-text;
+    color: abstracts.$primary-color;
+    text-align: center;
+  }
+  .btn {
+    width: 21.5625rem;
+  }
+  .password_input {
+    .forgot_password {
+      color: abstracts.$text-terciary-color;
+      text-align: end;
+    }
+  }
+}
+
+.alternative_login_form {
+  .separator {
+    color: abstracts.$text-terciary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    .line {
+      stroke-width: 1px;
+      background-color: abstracts.$text-terciary-color;
+    }
+  }
+
+  .login-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    img {
+      cursor: pointer;
+      object-fit: cover;
+    }
+  }
+
+  .sing-up {
+    text-align: center;
+    color: abstracts.$text-terciary-color;
+    a {
+      cursor: pointer;
+      color: abstracts.$primary-color;
+    }
+  }
+}

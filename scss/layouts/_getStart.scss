@@ -1,0 +1,46 @@
+@use '../base';
+@use '../abstracts';
+
+.getStart {
+  @include abstracts.flex(column, center, center);
+  position: relative;
+  overflow: hidden;
+  .logotipo {
+    margin: 50px;
+  }
+
+  h1 {
+    color: abstracts.$primary-color;
+    text-align: center;
+    width: 23rem;
+    color: #707cf8;
+    text-align: center;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .welcome-poster {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .welcome-image {
+      width: 23.5rem;
+      height: 36.375rem;
+    }
+    svg {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .btn-get-started {
+    position: fixed;
+    // left: 0;
+    // right: 0;
+    text-decoration: none;
+    bottom: 10vh;
+  }
+}

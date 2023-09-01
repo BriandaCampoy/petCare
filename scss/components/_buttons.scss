@@ -1,0 +1,53 @@
+@use '../abstracts';
+
+
+button{
+  border-style: none;
+}
+
+.btn{
+  border-style: none;
+  background: abstracts.$background-linear;
+  border-radius: 2rem;
+  @include abstracts.btn-text;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-secondary{
+  border-style: none;
+  color: abstracts.$primary-color;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-terciary{
+  color: abstracts.$primary-color;
+  text-align: center;
+  font-size: 1rem;
+  font-weight:600;
+  background-color: abstracts.$white;
+  border-radius: 2rem;
+  padding: .8rem 3rem;
+  margin-top: 1rem;
+}
+
+.social-icons{
+  padding:.5rem 2rem;
+  background: abstracts.$white;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.learn-more-btn {
+  border-style: none;
+  padding: 0.6rem 0.5rem;
+  border-radius: 0.625rem;
+  color: abstracts.$white;
+  background: abstracts.$primary-color;
+  font-size: 0.9375rem;
+  width: 100%;
+}

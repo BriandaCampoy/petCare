@@ -1,0 +1,9 @@
+@forward 'login';
+@forward 'getStart';
+@forward 'register';
+@forward 'dashboard';
+@use '../base';
+
+body{
+  font-family: base.$font-stack;
+}

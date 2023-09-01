@@ -1,0 +1,55 @@
+@use '../abstracts';
+@use '../base';
+
+.navbar {
+  @include abstracts.flex(row, space-between, center);
+  padding: 1rem;
+  h3 {
+    @include base.logo-text;
+  }
+  .navbar-options{
+    display: none;
+  }
+  .nav-profile {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+  }
+  @media (min-width: abstracts.$small) {
+    h3,
+    nav-profile,
+    img {
+      display: none;
+    }
+    @include abstracts.flex(row, flex-end, center);
+    .navbar-options{
+      @include abstracts.flex(row, flex-end, center);
+      gap: 2rem;
+    }
+  }
+}
+
+.nav-logo {
+  position: relative;
+  .logo {
+    margin: 5rem;
+    display: block;
+    @media screen and (min-width: abstracts.$small) {
+      display: none;
+    }
+  }
+  nav {
+    display: none;
+    @media screen and (min-width: abstracts.$small) {
+      display: block;
+      width: 100vw;
+      margin-top: 2rem;
+      .nav-options {
+        @include abstracts.flex(row, space-between, center);
+        gap: 2rem;
+      }
+      @include abstracts.flex(row, space-between, center);
+      padding: 0 1rem;
+    }
+  }
+}

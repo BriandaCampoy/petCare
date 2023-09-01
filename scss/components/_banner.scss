@@ -1,0 +1,126 @@
+@use '../abstracts';
+@use '../base';
+
+.banner {
+  background: abstracts.$background-linear;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  h1 {
+    font-size: base.$medium-text;
+    margin: 1rem 0;
+  }
+  color: abstracts.$white;
+  div {
+    z-index: 1;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  &::before {
+    width: 13rem;
+    height: 6rem;
+    left: 0;
+    background-image: url('../../assets/vectors/vector1.svg');
+  }
+
+  &::after {
+    width: 26.5rem;
+    height: 12rem;
+    background-image: url('../../assets/vectors/vector2.svg');
+  }
+}
+
+.banner-dashboard {
+  @include abstracts.flex(row, space-between, center);
+  height: 17rem;
+  padding-left: 1.5rem;
+  position: relative;
+  &::after {
+    width: 38.5rem;
+    height: 17rem;
+  }
+  .banner-text {
+    position: relative;
+    @media (min-width: abstracts.$small) {
+      padding-left: 5rem;
+      width: 60%;
+    }
+  }
+
+  button{
+    display: none;
+    @media (min-width: abstracts.$medium) {
+      display: block;
+    }
+  }
+
+  img {
+    display: none;
+    @media (min-width: abstracts.$small) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 19.4375rem;
+      height: 33.375rem;
+      z-index: 1;
+    }
+  }
+}
+
+.petcare-info {
+  position: relative;
+  .banner-services {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 2rem;
+
+    .services-description {
+      padding: 1rem;
+    }
+    .data {
+      z-index: 1;
+      padding: 1rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  img {
+    width: 22.5rem;
+    height: 37.8125rem;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media screen and (max-width: abstracts.$small) {
+    display: none;
+  }
+  @media screen and (max-width: abstracts.$medium) {
+    height: 30rem;
+    width: 100%;
+    .banner-services {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1rem;
+      margin: auto;
+      width: 90vw;
+    }
+  }
+}
