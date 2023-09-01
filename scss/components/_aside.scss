@@ -1,0 +1,15 @@
+@use '../abstracts';
+
+aside {
+  .aside-options {
+    @include abstracts.flex(column, space-evenly, flex-start);
+    .aside-icon {
+      @include abstracts.flex(column, center, center);
+      height: 5rem;
+      align-self: stretch;
+    }
+    .--active {
+      border-left: 5px solid abstracts.$primary-color;
+    }
+  }
+}

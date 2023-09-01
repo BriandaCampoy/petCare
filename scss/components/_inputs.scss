@@ -1,5 +1,9 @@
 @use '../abstracts';
 
+input{
+ outline: none;
+}
+
 .input {
   border-radius: 2.5rem;
   border: 1.4px solid abstracts.$secondary-color;
@@ -8,6 +12,13 @@
   height: 3.25rem;
   display: flex;
   justify-content: space-between;
+}
+
+.password_input {
+  .forgot_password {
+    color: abstracts.$text-terciary-color;
+    text-align: end;
+  }
 }
 
 .none-input{

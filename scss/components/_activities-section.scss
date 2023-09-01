@@ -1,0 +1,61 @@
+@use '../abstracts';
+
+.activities-section {
+  .timeline {
+    position: relative;
+    width: 2px;
+    background-color: #ccc;
+
+    .activity {
+      @include abstracts.flex(row, center, flex-start);
+      margin-bottom: 0.5rem;
+      width: 38vw;
+
+      .point {
+        margin-left: -4.5px;
+      }
+
+      .info {
+        flex: 1;
+        width: 100%;
+        margin-left: 1.5rem;
+        @include abstracts.flex(row, space-between, center);
+
+        h3 {
+          font-size: 1rem;
+          color: abstracts.$text-secondary-color;
+          font-weight: 500;
+        }
+
+        p {
+          color: abstracts.$text-primary-color;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+
+        span,
+        .date {
+          font-size: 0.8rem;
+          color: abstracts.$text-primary-color;
+          font-weight: 300;
+        }
+      }
+
+      .line {
+        width: 2px;
+        background-color: #ccc;
+        flex-shrink: 0;
+        margin-left: 6px;
+        margin-top: 6px;
+        height: 100%;
+      }
+    }
+  }
+  @media (min-width: abstracts.$medium) {
+    .timeline {
+      .activity {
+        width: 29vw;
+      }
+    }
+  }
+}

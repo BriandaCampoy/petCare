@@ -1,0 +1,14 @@
+@use '../abstracts';
+
+.profile-section {
+  .profile {
+    @include abstracts.flex(column, center, center);
+    padding: 1.25rem;
+    img {
+      width: 7.9375rem;
+      height: 7.8125rem;
+      border-radius: 6.53125rem;
+    }
+  }
+  
+}
