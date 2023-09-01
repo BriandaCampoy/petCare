@@ -672,10 +672,30 @@ aside .aside-options .--active {
   border-left: 5px solid #707CF8;
 }
 
+.services-section {
+  position: relative;
+}
 .services-section .services-carousel {
   width: 100%;
   overflow-x: scroll;
   white-space: nowrap;
+}
+.services-section .services-carousel .services-carousel-container .back {
+  z-index: 1;
+  position: absolute;
+  height: 11.3125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-section .services-carousel .services-carousel-container .next {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 0%;
 }
 .services-section .services-carousel .services-carousel-container {
   display: inline-flex;

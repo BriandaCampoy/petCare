@@ -2,7 +2,23 @@
 
 .services-section {
 
+  position: relative;
   .services-carousel {
+    
+    .services-carousel-container{
+      .back{
+        z-index: 1;
+        position: absolute;
+        height: 11.3125rem;
+        @include abstracts.flex(column, center, center);
+      }
+      .next{
+        position: sticky;
+        @include abstracts.flex(column, center, center);
+        right: 0%;
+      }
+
+    }
     width: 100%;
     overflow-x: scroll;
     white-space: nowrap;

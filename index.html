@@ -77,8 +77,37 @@
           <a href="">View all</a>
         </div>
         <div>
-          <div class="services-carousel">
-            <div class="services-carousel-container">
+          <div id="carousel" class="services-carousel">
+            <div id="carousel-container" class="services-carousel-container">
+              <div id="scroll-back" class="arrow back">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26"
+                  height="27"
+                  viewBox="0 0 26 27"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_243)">
+                    <path
+                      d="M18.4167 24.3333L7.58341 13.5L18.4167 2.66667"
+                      stroke="#6A6A6A"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_243">
+                      <rect
+                        width="26"
+                        height="26"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 26 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
               <article class="slide">
                 <div class="slide-item">
                   <img src="./assets/img/catalog1.png" alt="" />
@@ -103,6 +132,35 @@
                   <p>Pet training</p>
                 </div>
               </article>
+              <div id="scroll-next" class="arrow next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_260)">
+                    <path
+                      d="M8.39856 24.3333L19.2319 13.5L8.39856 2.66667"
+                      stroke="#6A6A6A"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_260">
+                      <rect
+                        width="26"
+                        height="26"
+                        fill="white"
+                        transform="translate(0.815186 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -305,5 +363,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./script.js"></script>
+    <script src="./scroll-script.js"></script>
   </body>
 </html>
