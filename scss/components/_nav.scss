@@ -42,7 +42,7 @@
     display: none;
     @media screen and (min-width: abstracts.$small) {
       display: block;
-      width: 100vw;
+      width: 90vw;
       margin-top: 2rem;
       .nav-options {
         @include abstracts.flex(row, space-between, center);

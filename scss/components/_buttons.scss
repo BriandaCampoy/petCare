@@ -38,6 +38,7 @@ button{
   border-radius: 2rem;
   padding: .8rem 3rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .social-icons{
@@ -56,4 +57,5 @@ button{
   background: abstracts.$primary-color;
   font-size: 0.9375rem;
   width: 100%;
+  cursor: pointer;
 }

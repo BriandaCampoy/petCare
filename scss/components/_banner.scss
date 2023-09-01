@@ -31,13 +31,13 @@
     width: 13rem;
     height: 6rem;
     left: 0;
-    background-image: url('../../assets/vectors/vector1.svg');
+    background-image: url('../assets/vectors/vector1.svg');
   }
 
   &::after {
     width: 26.5rem;
     height: 12rem;
-    background-image: url('../../assets/vectors/vector2.svg');
+    background-image: url('../assets/vectors/vector2.svg');
   }
 }
 

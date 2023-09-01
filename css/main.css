@@ -337,6 +337,7 @@ body {
   justify-content: center;
   margin: 1rem;
   gap: 0.5rem;
+  text-decoration: none;
 }
 .logotipo img {
   width: 2rem;
@@ -416,7 +417,7 @@ body {
 @media screen and (min-width: 40rem) {
   .nav-logo nav {
     display: block;
-    width: 100vw;
+    width: 90vw;
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
@@ -472,6 +473,7 @@ button {
   border-radius: 2rem;
   padding: 0.8rem 3rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .social-icons {
@@ -490,6 +492,7 @@ button {
   background: #707CF8;
   font-size: 0.9375rem;
   width: 100%;
+  cursor: pointer;
 }
 
 input {
@@ -543,12 +546,12 @@ input {
   width: 13rem;
   height: 6rem;
   left: 0;
-  background-image: url("../../assets/vectors/vector1.svg");
+  background-image: url("../assets/vectors/vector1.svg");
 }
 .banner::after {
   width: 26.5rem;
   height: 12rem;
-  background-image: url("../../assets/vectors/vector2.svg");
+  background-image: url("../assets/vectors/vector2.svg");
 }
 
 .banner-dashboard {
