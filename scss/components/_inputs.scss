@@ -24,3 +24,8 @@ input{
 .none-input{
   border-style: none;
 }
+
+form{
+  @include abstracts.flex(column, center, center);
+  gap: 1rem;
+}
